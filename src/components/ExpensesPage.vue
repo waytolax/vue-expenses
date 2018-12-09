@@ -38,7 +38,10 @@
                 <th>Сумма</th>
                 <th>Дата</th>
             </tr>
-            <tr v-for="(exp, index) of filteredExp">
+            <tr
+            v-for="(exp, index) of filteredExp"
+            :key="exp.id"
+            >
                 <td>{{exp.description}}</td>
                 <td>{{exp.amount}}</td>
                 <td>{{exp.date}}</td>
